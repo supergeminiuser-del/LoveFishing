@@ -11,3 +11,6 @@ workflows:
 
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
+
+    cache:
+       cache_paths: []
