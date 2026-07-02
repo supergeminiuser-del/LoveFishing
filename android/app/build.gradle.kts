@@ -10,14 +10,14 @@ android {
 
     ndkVersion = flutter.ndkVersion
 
-    defaultConfig {
-        applicationId = "com.fishlog.russia.fishlog_russia"
-
-        minSdk = flutter.minSdkVersion
-
-        targetSdk = 36
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-}
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 
     defaultConfig {
         applicationId = "com.fishlog.russia.fishlog_russia"
@@ -33,12 +33,6 @@ android {
         release {
             signingConfig = signingConfigs.getByName("debug")
         }
-    }
-}
-
-kotlin {
-    compilerOptions {
-        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
 }
 
