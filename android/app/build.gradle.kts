@@ -10,10 +10,14 @@ android {
 
     ndkVersion = flutter.ndkVersion
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+    defaultConfig {
+        applicationId = "com.fishlog.russia.fishlog_russia"
+
+        minSdk = flutter.minSdkVersion
+
+        targetSdk = 36
     }
+}
 
     defaultConfig {
         applicationId = "com.fishlog.russia.fishlog_russia"
