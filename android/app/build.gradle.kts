@@ -19,8 +19,6 @@ android {
         applicationId = "com.fishlog.russia.fishlog_russia"
 
         minSdk = flutter.minSdkVersion
-
-        // Было: flutter.targetSdkVersion
         targetSdk = 36
 
         versionCode = flutter.versionCode
