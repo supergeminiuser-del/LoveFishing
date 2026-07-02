@@ -1,0 +1,63 @@
+name: fishlog_russia
+description: "FishLog Russia — личный офлайн дневник рыболова."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  provider: ^6.1.2
+
+  # Local database
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  path_provider: ^2.1.5
+
+  # Preferences (theme, units, first-run flag)
+  shared_preferences: ^2.3.3
+
+  # Identifiers
+  uuid: ^4.5.1
+
+  # Dates / formatting (Russian locale)
+  intl: ^0.20.2
+
+  # Photos
+  image_picker: ^1.1.2
+
+  # GPS / location
+  geolocator: ^13.0.2
+  permission_handler: ^11.3.1
+
+  # Offline map
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Charts
+  fl_chart: ^0.69.2
+
+  # Backup: archive + share + file picking
+  archive: ^3.6.1
+  share_plus: ^10.1.4
+  file_picker: ^8.1.4
+
+  # HTTP for tile caching
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
